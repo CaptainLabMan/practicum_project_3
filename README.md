@@ -29,3 +29,30 @@ QUAST report:
 > *contigs: short conting*  
 > *SRR292678_scaffolds: short scaffolds*  
 > *refs_scaffolds: long scaffolds*  
+
+# 5
+```bash
+prokka --outdir prokka --force --centre XXX refs/scaffolds.fasta
+```
+
+# 6 
+```bash
+barrnap refs/scaffolds.fasta --kingdom bac --threads 6 > barrnap/barrnap_my_bac.gff 2> barrnap/barrnap_my_bac.stderr.log  
+
+awk 'NR==1 || $9 ~ /^Name=16S_rRNA/' barrnap/barrnap_my_bac.gff > barrnap/barrnap_my_bac.16s_rrna.gff
+
+awk '!/^#/ {print $1 "\t" $4-1 "\t" $5 "\t" $9}' barrnap/barrnap_my_bac.16s_rrna.gff > barrnap/barrnap_my_bac.16s_rrna.bed
+
+bedtools getfasta -fi refs/scaffolds.fasta -bed barrnap/barrnap_my_bac.16s_rrna.bed > barrnap/barrnap_my_bac.16s_rrna.fa
+```
+
+Всего было выявлено 8 регионов соответствующих 16S rRNA.  
+Один из этих регионов был выравнен только на 25% от 16S rRNA.  
+Четыре региона на + цепи, 4 на -.  
+Все 8 регинонов имеют разные хромосомные координаты и, скорее всего, являются уникальными (транскрибируются в разных направлениях), а не просто reverse-complement последовательностями.  
+
+BLAST results:  
+![blast_results](images/blast_results.png)  
+> *Name (DEFINITION): **Escherichia coli 55989, complete sequence.***  
+> *Annotation Name: **GCF_000026245.1-RS_2025_06_09***  
+> *ACCESSION: **NC_011748***  

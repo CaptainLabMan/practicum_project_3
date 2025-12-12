@@ -1,0 +1,51 @@
+[barrnap] This is barrnap 0.9
+[barrnap] Written by Torsten Seemann
+[barrnap] Obtained from https://github.com/tseemann/barrnap
+[barrnap] Detected operating system: darwin
+[barrnap] Adding /Users/andrejnekrasov/mambaforge/envs/ib.venv/lib/barrnap/bin/../binaries/darwin to end of PATH
+[barrnap] Checking for dependencies:
+[barrnap] Found nhmmer - /Users/andrejnekrasov/mambaforge/envs/ib.venv/bin/nhmmer
+[barrnap] Found bedtools - /Users/andrejnekrasov/mambaforge/envs/ib.venv/bin/bedtools
+[barrnap] Will use 6 threads
+[barrnap] Setting evalue cutoff to 1e-06
+[barrnap] Will tag genes < 0.8 of expected length.
+[barrnap] Will reject genes < 0.25 of expected length.
+[barrnap] Using database: /Users/andrejnekrasov/mambaforge/envs/ib.venv/lib/barrnap/bin/../db/bac.hmm
+[barrnap] Scanning refs/scaffolds.fasta for bac rRNA genes... please wait
+[barrnap] Command: nhmmer --cpu 6 -E 1e-06 --w_length 3878 -o /dev/null --tblout /dev/stdout '/Users/andrejnekrasov/mambaforge/envs/ib.venv/lib/barrnap/bin/../db/bac.hmm' 'refs/scaffolds.fasta'
+[barrnap] Found: 16S_rRNA NODE_1_length_2579755_cov_79.346722 L=1538/1585 614444..615981 + 16S ribosomal RNA
+[barrnap] Found: 16S_rRNA NODE_1_length_2579755_cov_79.346722 L=1538/1585 2034894..2036431 - 16S ribosomal RNA
+[barrnap] Found: 16S_rRNA NODE_2_length_968098_cov_80.413308 L=1538/1585 777419..778956 + 16S ribosomal RNA
+[barrnap] Found: 16S_rRNA NODE_2_length_968098_cov_80.413308 L=1538/1585 88259..89796 - 16S ribosomal RNA
+[barrnap] Found: 16S_rRNA NODE_2_length_968098_cov_80.413308 L=1538/1585 185599..187136 - 16S ribosomal RNA
+[barrnap] Found: 16S_rRNA NODE_6_length_235199_cov_88.419113 L=1538/1585 43835..45372 + 16S ribosomal RNA
+[barrnap] Found: 16S_rRNA NODE_6_length_235199_cov_88.419113 L=1538/1585 85217..86754 + 16S ribosomal RNA
+[barrnap] Rejecting short 285 nt predicted 16S_rRNA. Adjust via --reject option.
+[barrnap] Found: 16S_rRNA NODE_17_length_720_cov_1.094737 L=406/1585 314..719 + 16S ribosomal RNA (partial)
+[barrnap] Rejecting short 180 nt predicted 16S_rRNA. Adjust via --reject option.
+[barrnap] Rejecting short 204 nt predicted 16S_rRNA. Adjust via --reject option.
+[barrnap] Found: 23S_rRNA NODE_1_length_2579755_cov_79.346722 L=2901/3232 2031544..2034444 - 23S ribosomal RNA
+[barrnap] Found: 23S_rRNA NODE_2_length_968098_cov_80.413308 L=2901/3232 84909..87809 - 23S ribosomal RNA
+[barrnap] Found: 23S_rRNA NODE_1_length_2579755_cov_79.346722 L=2901/3232 616425..619325 + 23S ribosomal RNA
+[barrnap] Found: 23S_rRNA NODE_2_length_968098_cov_80.413308 L=2901/3232 182341..185241 - 23S ribosomal RNA
+[barrnap] Found: 23S_rRNA NODE_6_length_235199_cov_88.419113 L=2901/3232 45730..48630 + 23S ribosomal RNA
+[barrnap] Found: 23S_rRNA NODE_6_length_235199_cov_88.419113 L=2901/3232 87112..90012 + 23S ribosomal RNA
+[barrnap] Found: 23S_rRNA NODE_2_length_968098_cov_80.413308 L=2901/3232 779406..782306 + 23S ribosomal RNA
+[barrnap] Rejecting short 340 nt predicted 23S_rRNA. Adjust via --reject option.
+[barrnap] Rejecting short 250 nt predicted 23S_rRNA. Adjust via --reject option.
+[barrnap] Rejecting short 365 nt predicted 23S_rRNA. Adjust via --reject option.
+[barrnap] Rejecting short 102 nt predicted 23S_rRNA. Adjust via --reject option.
+[barrnap] Rejecting short 363 nt predicted 23S_rRNA. Adjust via --reject option.
+[barrnap] Rejecting short 101 nt predicted 23S_rRNA. Adjust via --reject option.
+[barrnap] Found: 5S_rRNA NODE_49_length_223_cov_0.720238 L=111/119 19..129 + 5S ribosomal RNA
+[barrnap] Found: 5S_rRNA NODE_1_length_2579755_cov_79.346722 L=111/119 619424..619534 + 5S ribosomal RNA
+[barrnap] Found: 5S_rRNA NODE_1_length_2579755_cov_79.346722 L=111/119 2031335..2031445 - 5S ribosomal RNA
+[barrnap] Found: 5S_rRNA NODE_2_length_968098_cov_80.413308 L=111/119 782405..782515 + 5S ribosomal RNA
+[barrnap] Found: 5S_rRNA NODE_2_length_968098_cov_80.413308 L=111/119 84700..84810 - 5S ribosomal RNA
+[barrnap] Found: 5S_rRNA NODE_2_length_968098_cov_80.413308 L=111/119 182132..182242 - 5S ribosomal RNA
+[barrnap] Found: 5S_rRNA NODE_6_length_235199_cov_88.419113 L=111/119 48729..48839 + 5S ribosomal RNA
+[barrnap] Found: 5S_rRNA NODE_6_length_235199_cov_88.419113 L=111/119 90111..90221 + 5S ribosomal RNA
+[barrnap] Found: 5S_rRNA NODE_2_length_968098_cov_80.413308 L=111/119 782650..782760 + 5S ribosomal RNA
+[barrnap] Found 24 ribosomal RNA features.
+[barrnap] Sorting features and outputting GFF3...
+[barrnap] Done.

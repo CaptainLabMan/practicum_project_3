@@ -1,4 +1,6 @@
 alignments
 reads
 refs
+prokka
+quast
 .DS_Store
