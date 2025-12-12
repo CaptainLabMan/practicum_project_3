@@ -8,7 +8,7 @@ reads_count:
 # 2 (OPTIONAL)
 
 # 3 
-Assembled genome was downloaded in [refs](refs/SRR292678.zip) folder and unzipped manually with followed command:
+Assembled genome was downloaded in **refs** folder and unzipped manually with followed command:
 ```bash
 unzip SRR292678.zip
 ```  
@@ -18,7 +18,7 @@ quast.py refs/SRR292678/contigs.fasta refs/SRR292678/scaffolds.fasta -t 1 -o qua
 ```  
 
 # 4 
-Long reads was donloads in [refs](refs/SRR292678.zip) folder:  
+Long reads were downloaded in **refs** folder:  
 
 ```bash
 quast.py refs/SRR292678/contigs.fasta refs/SRR292678/scaffolds.fasta refs/scaffolds.fasta -t 1 -o quast/long_reads > quast/long_reads/quast.stdout.log 2> quast/long_reads/quast.stderr.log   
@@ -27,5 +27,5 @@ quast.py refs/SRR292678/contigs.fasta refs/SRR292678/scaffolds.fasta refs/scaffo
 QUAST report:  
 ![quast_output](images/quast_output.png)  
 > *contigs: short conting*  
-> **SRR292678_scaffolds: short scaffolds*  
+> *SRR292678_scaffolds: short scaffolds*  
 > *refs_scaffolds: long scaffolds*  
