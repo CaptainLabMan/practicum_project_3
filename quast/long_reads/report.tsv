@@ -1,0 +1,23 @@
+Assembly	contigs	SRR292678_scaffolds	refs_scaffolds
+# contigs (>= 0 bp)	386	372	71
+# contigs (>= 1000 bp)	159	158	11
+# contigs (>= 5000 bp)	81	82	10
+# contigs (>= 10000 bp)	67	67	10
+# contigs (>= 25000 bp)	50	50	9
+# contigs (>= 50000 bp)	32	32	9
+Total length (>= 0 bp)	5334575	5336365	5444102
+Total length (>= 1000 bp)	5259101	5259608	5423210
+Total length (>= 5000 bp)	5076685	5081904	5421606
+Total length (>= 10000 bp)	4977737	4977737	5421606
+Total length (>= 25000 bp)	4714504	4714504	5411368
+Total length (>= 50000 bp)	4035821	4035821	5411368
+# contigs	210	221	26
+Largest contig	300763	300763	2579755
+Total length	5295721	5304595	5433714
+GC (%)	50.56	50.53	50.60
+N50	111860	111860	968098
+N90	18506	18506	235199
+auN	131921.2	131704.5	1517684.0
+L50	14	14	2
+L90	53	53	6
+# N's per 100 kbp	0.00	33.74	25.84
