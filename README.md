@@ -28,7 +28,7 @@ quast.py refs/SRR292678/contigs.fasta refs/SRR292678/scaffolds.fasta refs/scaffo
 
 QUAST report:  
 ![quast_output](images/quast_output.png)  
-> *contigs: short conting*  
+> *contigs: short contings*  
 > *SRR292678_scaffolds: short scaffolds*  
 > *refs_scaffolds: long scaffolds*  
 
