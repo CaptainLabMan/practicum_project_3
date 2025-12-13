@@ -20,7 +20,7 @@ quast.py refs/SRR292678/contigs.fasta refs/SRR292678/scaffolds.fasta -t 1 -o qua
 ```  
 
 # 4. Impact of long reads
-Long reads were [downloaded](https://disk.yandex.ru/d/g5FAEE01uKqq9w) to the **refs** folder:  
+The assembled genome (short + long reads) was [downloaded](https://disk.yandex.ru/d/g5FAEE01uKqq9w) to the **refs** folder:  
 
 ```bash
 quast.py refs/SRR292678/contigs.fasta refs/SRR292678/scaffolds.fasta refs/scaffolds.fasta -t 1 -o quast/long_reads > quast/long_reads/quast.stdout.log 2> quast/long_reads/quast.stderr.log   
