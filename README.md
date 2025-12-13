@@ -1,14 +1,16 @@
 # 1
-fastqc -o ./reads/fastqc reads/SRR292678sub_S1_L001_R1_001.fastq.gz reads/SRR292678sub_S1_L001_R2_001.fastq.gz  
+```bash
+fastqc -o ./reads/fastqc reads/SRR292678sub_S1_L001_R1_001.fastq.gz reads/SRR292678sub_S1_L001_R2_001.fastq.gz
+```
 
-reads_count:  
+Reads count:  
 > SRR292678sub_S1_L001_R1_001.fastq.gz - 5499346  
 > SRR292678sub_S1_L001_R2_001.fastq.gz - 5499346
 
 # 2 (OPTIONAL)
 
 # 3 
-Assembled genome was downloaded in **refs** folder and unzipped manually with followed command:
+The assembled genome was downloaded into the **refs** folder and extracted manually using the following command:  
 ```bash
 unzip SRR292678.zip
 ```  
@@ -18,7 +20,7 @@ quast.py refs/SRR292678/contigs.fasta refs/SRR292678/scaffolds.fasta -t 1 -o qua
 ```  
 
 # 4 
-Long reads were downloaded in **refs** folder:  
+Long reads were downloaded to the **refs** folder:  
 
 ```bash
 quast.py refs/SRR292678/contigs.fasta refs/SRR292678/scaffolds.fasta refs/scaffolds.fasta -t 1 -o quast/long_reads > quast/long_reads/quast.stdout.log 2> quast/long_reads/quast.stderr.log   
@@ -38,18 +40,15 @@ prokka --outdir prokka --force --centre XXX refs/scaffolds.fasta
 # 6 
 ```bash
 barrnap refs/scaffolds.fasta --kingdom bac --threads 6 > barrnap/barrnap_my_bac.gff 2> barrnap/barrnap_my_bac.stderr.log  
-
 awk 'NR==1 || $9 ~ /^Name=16S_rRNA/' barrnap/barrnap_my_bac.gff > barrnap/barrnap_my_bac.16s_rrna.gff
-
 awk '!/^#/ {print $1 "\t" $4-1 "\t" $5 "\t" $9}' barrnap/barrnap_my_bac.16s_rrna.gff > barrnap/barrnap_my_bac.16s_rrna.bed
-
 bedtools getfasta -fi refs/scaffolds.fasta -bed barrnap/barrnap_my_bac.16s_rrna.bed > barrnap/barrnap_my_bac.16s_rrna.fa
 ```
 
-Всего было выявлено 8 регионов соответствующих 16S rRNA.  
-Один из этих регионов был выравнен только на 25% от 16S rRNA.  
-Четыре региона на + цепи, 4 на -.  
-Все 8 регинонов имеют разные хромосомные координаты и, скорее всего, являются уникальными (транскрибируются в разных направлениях), а не просто reverse-complement последовательностями.  
+We found eight regions that match 16S rRNA.  
+One of these regions aligned to only 25% of the full 16S rRNA sequence.  
+Four regions are on the forward strand, and four are on the reverse strand.  
+All eight regions have different positions on the chromosome. They are most likely unique sequences (transcribed in opposite directions) and not just reverse-complement copies of each other.  
 
 BLAST results:  
 ![blast_results](images/blast_results.png)  
@@ -60,12 +59,12 @@ BLAST results:
 # 7 
 Mauve was downloaded from the [source](https://darlinglab.org/mauve/download.html).  
 ![shiga_genes](images/shiga_genes.png)  
-В исследуемом нами штамме E. coli X было выявлено 2 гена (а точнее 2 субъединицы), кодирующие шига-токсины:  
+In the E. coli X strain we studied, we found two genes that code for Shiga toxins. To be precise, these are two subunits.   
 1. stxA (4445290-4446249)  
 2. stxB (4446261-4446530)
 
 # 8 
-Да, у меня в файле много "hypothetical proteins", но основыяваясь на наличии, рядом расположенного, гена nohA_3 (Prophage DNA-packing protein NohA) можно предположить, что гены stxA и stxB были получены путем горизонтального переноса - лигозении (интеграции генома бактериофага в геном бактерии).  
+Yes, my file has many "hypothetical proteins". However, the nearby nohA_3 gene is a clue. This gene codes for a prophage DNA-packing protein. This suggests that the stxA and stxB genes were likely acquired by horizontal transfer. Specifically, this probably happened through lysogeny, which is when a phage genome integrates into the bacterial chromosome.  
 > nohA_3 (4448169-4448717)
 
 # 9 
@@ -77,3 +76,6 @@ Mauve was downloaded from the [source](https://darlinglab.org/mauve/download.htm
 
 # 10
 ![bla](images/bla.png)  
+The likely mechanism involves mobile genetic elements — specifically, plasmids that carry transposons.  
+> tnpR_1 (Transposon Tn3 resolvase) (2915041-2915292)  
+> tnpR_2 (Transposon Tn3 resolvase) (5263638-5264195)  
