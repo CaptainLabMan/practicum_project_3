@@ -83,8 +83,8 @@ Yes, my file has many "hypothetical proteins". However, the nearby nohA_3 gene i
 # 10. Antibiotic resistance mechanism
 ![bla](images/bla.png)  
 The likely mechanism involves mobile genetic elements — specifically, plasmids that carry transposons.  
-1. tnpR_1 (Transposon Tn3 resolvase) (2915041-2915292)  
-2. tnpR_2 (Transposon Tn3 resolvase) (5263638-5264195)  
+1. **tnpR_1** (Transposon Tn3 resolvase) (2915041-2915292)  
+2. **tnpR_2** (Transposon Tn3 resolvase) (5263638-5264195)  
 
 # Project's tree:
 ```bash
