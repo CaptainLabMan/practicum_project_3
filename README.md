@@ -87,6 +87,7 @@ The likely mechanism involves mobile genetic elements — specifically, plasmids
 > tnpR_2 (Transposon Tn3 resolvase) (5263638-5264195)  
 
 # Project's tree:
+```bash
 .
 ├── README.md
 ├── barrnap
@@ -196,3 +197,4 @@ The likely mechanism involves mobile genetic elements — specifically, plasmids
 └── tree.txt
 
 17 directories, 90 files
+```
