@@ -32,6 +32,12 @@ QUAST report:
 > *SRR292678_scaffolds: short scaffolds*  
 > *refs_scaffolds: long scaffolds*  
 
+Task: Also answer, how did the quality of the assembly improved and why.  
+Answer:  
+> The assembly showed a clear improvement: the number of contigs dropped sharply (Contigs: 210/221 → 26) while their length increased significantly (Largest contig: 300,763 → 2,579,755 / N50: 111,860 → 968,098).  
+> This result is achieved because long reads can span repetitive sequences and reduce the complexity of the assembly graph.  
+
+
 # 5
 ```bash
 prokka --outdir prokka --force --centre XXX refs/scaffolds.fasta
