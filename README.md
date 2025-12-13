@@ -66,12 +66,12 @@ bedtools getfasta -fi refs/scaffolds.fasta -bed barrnap/barrnap_my_bac.16s_rrna.
 Mauve was downloaded from the [source](https://darlinglab.org/mauve/download.html).  
 ![shiga_genes](images/shiga_genes.png)  
 In the E. coli X strain we studied, we found two genes that code for Shiga toxins. To be precise, these are two subunits.   
-1. stxA (4445290-4446249)  
-2. stxB (4446261-4446530)
+1. **stxA** (4445290-4446249)  
+2. **stxB** (4446261-4446530)
 
 # 8. Tracing the source of toxin genes in E. coli X
 Yes, my file has many "hypothetical proteins". However, the nearby nohA_3 gene is a clue. This gene codes for a prophage DNA-packing protein. This suggests that the stxA and stxB genes were likely acquired by horizontal transfer. Specifically, this probably happened through lysogeny, which is when a phage genome integrates into the bacterial chromosome.  
-> nohA_3 (Prophage DNA-packing protein NohA) (4448169-4448717)
+- nohA_3 (Prophage DNA-packing protein NohA) (4448169-4448717)
 
 # 9. Antibiotic resistance detection
 **E. coli X AR:**  
@@ -83,8 +83,8 @@ Yes, my file has many "hypothetical proteins". However, the nearby nohA_3 gene i
 # 10. Antibiotic resistance mechanism
 ![bla](images/bla.png)  
 The likely mechanism involves mobile genetic elements — specifically, plasmids that carry transposons.  
-> tnpR_1 (Transposon Tn3 resolvase) (2915041-2915292)  
-> tnpR_2 (Transposon Tn3 resolvase) (5263638-5264195)  
+1. tnpR_1 (Transposon Tn3 resolvase) (2915041-2915292)  
+2. tnpR_2 (Transposon Tn3 resolvase) (5263638-5264195)  
 
 # Project's tree:
 ```bash
