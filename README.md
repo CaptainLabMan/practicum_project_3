@@ -3,7 +3,7 @@
 fastqc -o ./reads/fastqc reads/SRR292678sub_S1_L001_R1_001.fastq.gz reads/SRR292678sub_S1_L001_R2_001.fastq.gz
 ```
 
-Reads count:  
+**Reads count:**  
 > SRR292678sub_S1_L001_R1_001.fastq.gz - 5499346  
 > SRR292678sub_S1_L001_R2_001.fastq.gz - 5499346
 
