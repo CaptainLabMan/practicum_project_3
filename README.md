@@ -32,8 +32,8 @@ quast.py refs/SRR292678/contigs.fasta refs/SRR292678/scaffolds.fasta refs/scaffo
 > *SRR292678_scaffolds: short scaffolds*  
 > *refs_scaffolds: long scaffolds*  
 
-Task: Also answer, how did the quality of the assembly improved and why.  
-Answer:  
+**Task:** *Also answer, how did the quality of the assembly improved and why.*  
+**Answer:**  
 > The assembly showed a clear improvement: the number of contigs dropped sharply (Contigs: 210/221 → 26) while their length increased significantly (Largest contig: 300,763 → 2,579,755 / N50: 111,860 → 968,098).  
 > This result is achieved because long reads can span repetitive sequences and reduce the complexity of the assembly graph.  
 
@@ -51,10 +51,10 @@ awk '!/^#/ {print $1 "\t" $4-1 "\t" $5 "\t" $9}' barrnap/barrnap_my_bac.16s_rrna
 bedtools getfasta -fi refs/scaffolds.fasta -bed barrnap/barrnap_my_bac.16s_rrna.bed > barrnap/barrnap_my_bac.16s_rrna.fa
 ```
 
-We found eight regions that match 16S rRNA.  
-One of these regions aligned to only 25% of the full 16S rRNA sequence.  
-Four regions are on the forward strand, and four are on the reverse strand.  
-All eight regions have different positions on the chromosome. They are most likely unique sequences (transcribed in opposite directions) and not just reverse-complement copies of each other.  
+> We found eight regions that match 16S rRNA.  
+> One of these regions aligned to only 25% of the full 16S rRNA sequence.  
+> Four regions are on the forward strand, and four are on the reverse strand.  
+> All eight regions have different positions on the chromosome. They are most likely unique sequences (transcribed in opposite directions) and not just reverse-complement copies of each other.  
 
 **BLAST results:**  
 ![blast_results](images/blast_results.png)  
