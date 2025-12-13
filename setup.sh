@@ -1,6 +1,5 @@
 mkdir -p refs
 mkdir -p reads/fastqc
-mkdir -p alignments
 mkdir -p quast
 mkdir -p quast/short_reads
 mkdir -p quast/long_reads
