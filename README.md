@@ -10,7 +10,7 @@ Reads count:
 # 2. (COMPLETELY OPTIONAL!). K-mer profile and genome size estimation
 
 # 3. Assembling E. coli X genome from paired reads
-The assembled genome was downloaded into the **refs** folder and extracted manually using the following command:  
+The assembled genome was [downloaded](https://yadi.sk/d/4xEI_7gdxzN2D) into the **refs** folder and extracted manually using the following command:  
 ```bash
 unzip SRR292678.zip
 ```  
@@ -20,7 +20,7 @@ quast.py refs/SRR292678/contigs.fasta refs/SRR292678/scaffolds.fasta -t 1 -o qua
 ```  
 
 # 4. Impact of long reads
-Long reads were downloaded to the **refs** folder:  
+Long reads were [downloaded](https://disk.yandex.ru/d/g5FAEE01uKqq9w) to the **refs** folder:  
 
 ```bash
 quast.py refs/SRR292678/contigs.fasta refs/SRR292678/scaffolds.fasta refs/scaffolds.fasta -t 1 -o quast/long_reads > quast/long_reads/quast.stdout.log 2> quast/long_reads/quast.stderr.log   
