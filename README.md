@@ -26,7 +26,7 @@ The assembled genome (short + long reads) was [downloaded](https://disk.yandex.r
 quast.py refs/SRR292678/contigs.fasta refs/SRR292678/scaffolds.fasta refs/scaffolds.fasta -t 1 -o quast/long_reads > quast/long_reads/quast.stdout.log 2> quast/long_reads/quast.stderr.log   
 ```  
 
-QUAST report:  
+**QUAST report:**  
 ![quast_output](images/quast_output.png)  
 > *contigs: short contings*  
 > *SRR292678_scaffolds: short scaffolds*  
@@ -56,7 +56,7 @@ One of these regions aligned to only 25% of the full 16S rRNA sequence.
 Four regions are on the forward strand, and four are on the reverse strand.  
 All eight regions have different positions on the chromosome. They are most likely unique sequences (transcribed in opposite directions) and not just reverse-complement copies of each other.  
 
-BLAST results:  
+**BLAST results:**  
 ![blast_results](images/blast_results.png)  
 > *Name (DEFINITION): **Escherichia coli 55989, complete sequence.***  
 > *Annotation Name: **GCF_000026245.1-RS_2025_06_09***  
