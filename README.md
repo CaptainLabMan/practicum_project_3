@@ -1,4 +1,4 @@
-# 1
+# 1. Exploring the dataset
 ```bash
 fastqc -o ./reads/fastqc reads/SRR292678sub_S1_L001_R1_001.fastq.gz reads/SRR292678sub_S1_L001_R2_001.fastq.gz
 ```
@@ -7,9 +7,9 @@ Reads count:
 > SRR292678sub_S1_L001_R1_001.fastq.gz - 5499346  
 > SRR292678sub_S1_L001_R2_001.fastq.gz - 5499346
 
-# 2 (OPTIONAL)
+# 2. (COMPLETELY OPTIONAL!). K-mer profile and genome size estimation
 
-# 3 
+# 3. Assembling E. coli X genome from paired reads
 The assembled genome was downloaded into the **refs** folder and extracted manually using the following command:  
 ```bash
 unzip SRR292678.zip
@@ -19,7 +19,7 @@ unzip SRR292678.zip
 quast.py refs/SRR292678/contigs.fasta refs/SRR292678/scaffolds.fasta -t 1 -o quast/short_reads > quast/short_reads/quast.stdout.log 2> quast/short_reads/quast.stderr.log 
 ```  
 
-# 4 
+# 4. Impact of long reads
 Long reads were downloaded to the **refs** folder:  
 
 ```bash
@@ -38,12 +38,12 @@ Answer:
 > This result is achieved because long reads can span repetitive sequences and reduce the complexity of the assembly graph.  
 
 
-# 5
+# 5. Genome Annotation
 ```bash
 prokka --outdir prokka --force --centre XXX refs/scaffolds.fasta
 ```
 
-# 6 
+# 6. Finding the closest relative of E. coli X
 ```bash
 barrnap refs/scaffolds.fasta --kingdom bac --threads 6 > barrnap/barrnap_my_bac.gff 2> barrnap/barrnap_my_bac.stderr.log  
 awk 'NR==1 || $9 ~ /^Name=16S_rRNA/' barrnap/barrnap_my_bac.gff > barrnap/barrnap_my_bac.16s_rrna.gff
@@ -62,25 +62,25 @@ BLAST results:
 > *Annotation Name: **GCF_000026245.1-RS_2025_06_09***  
 > *ACCESSION: **NC_011748***  
 
-# 7 
+# 7. What is the genetic cause of HUS?
 Mauve was downloaded from the [source](https://darlinglab.org/mauve/download.html).  
 ![shiga_genes](images/shiga_genes.png)  
 In the E. coli X strain we studied, we found two genes that code for Shiga toxins. To be precise, these are two subunits.   
 1. stxA (4445290-4446249)  
 2. stxB (4446261-4446530)
 
-# 8 
+# 8. Tracing the source of toxin genes in E. coli X
 Yes, my file has many "hypothetical proteins". However, the nearby nohA_3 gene is a clue. This gene codes for a prophage DNA-packing protein. This suggests that the stxA and stxB genes were likely acquired by horizontal transfer. Specifically, this probably happened through lysogeny, which is when a phage genome integrates into the bacterial chromosome.  
 > nohA_3 (Prophage DNA-packing protein NohA) (4448169-4448717)
 
-# 9 
+# 9. Antibiotic resistance detection
 **E. coli X AR:**  
 ![X_AR](images/x_ar.png)  
 
 **55989 AR:**  
 ![55989_AR](images/55989_ar.png)  
 
-# 10
+# 10. Antibiotic resistance mechanism
 ![bla](images/bla.png)  
 The likely mechanism involves mobile genetic elements — specifically, plasmids that carry transposons.  
 > tnpR_1 (Transposon Tn3 resolvase) (2915041-2915292)  
