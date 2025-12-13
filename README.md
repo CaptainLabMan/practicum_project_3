@@ -71,7 +71,7 @@ In the E. coli X strain we studied, we found two genes that code for Shiga toxin
 
 # 8 
 Yes, my file has many "hypothetical proteins". However, the nearby nohA_3 gene is a clue. This gene codes for a prophage DNA-packing protein. This suggests that the stxA and stxB genes were likely acquired by horizontal transfer. Specifically, this probably happened through lysogeny, which is when a phage genome integrates into the bacterial chromosome.  
-> nohA_3 (4448169-4448717)
+> nohA_3 (Prophage DNA-packing protein NohA) (4448169-4448717)
 
 # 9 
 **E. coli X AR:**  
