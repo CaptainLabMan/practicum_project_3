@@ -51,10 +51,10 @@ awk '!/^#/ {print $1 "\t" $4-1 "\t" $5 "\t" $9}' barrnap/barrnap_my_bac.16s_rrna
 bedtools getfasta -fi refs/scaffolds.fasta -bed barrnap/barrnap_my_bac.16s_rrna.bed > barrnap/barrnap_my_bac.16s_rrna.fa
 ```
 
-> We found eight regions that match 16S rRNA.  
+> We found 8 regions that match 16S rRNA.  
 > One of these regions aligned to only 25% of the full 16S rRNA sequence.  
 > Four regions are on the forward strand, and four are on the reverse strand.  
-> All eight regions have different positions on the chromosome. They are most likely unique sequences (transcribed in opposite directions) and not just reverse-complement copies of each other.  
+> All 8 regions have different positions on the chromosome. They are most likely unique sequences (transcribed in opposite directions) and not just reverse-complement copies of each other.  
 
 **BLAST results:**  
 ![blast_results](images/blast_results.png)  
