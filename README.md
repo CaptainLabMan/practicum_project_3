@@ -85,3 +85,114 @@ Yes, my file has many "hypothetical proteins". However, the nearby nohA_3 gene i
 The likely mechanism involves mobile genetic elements — specifically, plasmids that carry transposons.  
 > tnpR_1 (Transposon Tn3 resolvase) (2915041-2915292)  
 > tnpR_2 (Transposon Tn3 resolvase) (5263638-5264195)  
+
+# Project's tree:
+.
+├── README.md
+├── barrnap
+│   ├── barrnap_my_bac.16s_rrna.bed
+│   ├── barrnap_my_bac.16s_rrna.fa
+│   ├── barrnap_my_bac.16s_rrna.gff
+│   ├── barrnap_my_bac.gff
+│   └── barrnap_my_bac.stderr.log
+├── blast
+│   └── 55989.fasta
+├── images
+│   ├── 55989_ar.png
+│   ├── bla.png
+│   ├── blast_results.png
+│   ├── quast_output.png
+│   ├── shiga_genes.png
+│   └── x_ar.png
+├── mauve
+│   ├── mauve_results
+│   ├── mauve_results.backbone
+│   ├── mauve_results.bbcols
+│   └── mauve_results.guide_tree
+├── prokka
+│   ├── PROKKA_12132025.err
+│   ├── PROKKA_12132025.faa
+│   ├── PROKKA_12132025.ffn
+│   ├── PROKKA_12132025.fna
+│   ├── PROKKA_12132025.fsa
+│   ├── PROKKA_12132025.gbf-r
+│   ├── PROKKA_12132025.gbk
+│   ├── PROKKA_12132025.gbk.sslist
+│   ├── PROKKA_12132025.gff
+│   ├── PROKKA_12132025.log
+│   ├── PROKKA_12132025.sqn
+│   ├── PROKKA_12132025.tbl
+│   ├── PROKKA_12132025.tsv
+│   └── PROKKA_12132025.txt
+├── quast
+│   ├── long_reads
+│   │   ├── basic_stats
+│   │   │   ├── GC_content_plot.pdf
+│   │   │   ├── Nx_plot.pdf
+│   │   │   ├── SRR292678_scaffolds_GC_content_plot.pdf
+│   │   │   ├── SRR292678_scaffolds_coverage_histogram.pdf
+│   │   │   ├── contigs_GC_content_plot.pdf
+│   │   │   ├── contigs_coverage_histogram.pdf
+│   │   │   ├── coverage_histogram.pdf
+│   │   │   ├── cumulative_plot.pdf
+│   │   │   ├── refs_scaffolds_GC_content_plot.pdf
+│   │   │   └── refs_scaffolds_coverage_histogram.pdf
+│   │   ├── icarus.html
+│   │   ├── icarus_viewers
+│   │   │   └── contig_size_viewer.html
+│   │   ├── quast.log
+│   │   ├── quast.stderr.log
+│   │   ├── quast.stdout.log
+│   │   ├── report.html
+│   │   ├── report.pdf
+│   │   ├── report.tex
+│   │   ├── report.tsv
+│   │   ├── report.txt
+│   │   ├── transposed_report.tex
+│   │   ├── transposed_report.tsv
+│   │   └── transposed_report.txt
+│   └── short_reads
+│       ├── basic_stats
+│       │   ├── GC_content_plot.pdf
+│       │   ├── Nx_plot.pdf
+│       │   ├── contigs_GC_content_plot.pdf
+│       │   ├── contigs_coverage_histogram.pdf
+│       │   ├── coverage_histogram.pdf
+│       │   ├── cumulative_plot.pdf
+│       │   ├── scaffolds_GC_content_plot.pdf
+│       │   └── scaffolds_coverage_histogram.pdf
+│       ├── icarus.html
+│       ├── icarus_viewers
+│       │   └── contig_size_viewer.html
+│       ├── quast.log
+│       ├── quast.stderr.log
+│       ├── quast.stdout.log
+│       ├── report.html
+│       ├── report.pdf
+│       ├── report.tex
+│       ├── report.tsv
+│       ├── report.txt
+│       ├── transposed_report.tex
+│       ├── transposed_report.tsv
+│       └── transposed_report.txt
+├── reads
+│   ├── SRR292678sub_S1_L001_R1_001.fastq.gz
+│   ├── SRR292678sub_S1_L001_R2_001.fastq.gz
+│   └── fastqc
+│       ├── SRR292678sub_S1_L001_R1_001_fastqc.html
+│       ├── SRR292678sub_S1_L001_R1_001_fastqc.zip
+│       ├── SRR292678sub_S1_L001_R2_001_fastqc.html
+│       └── SRR292678sub_S1_L001_R2_001_fastqc.zip
+├── refs
+│   ├── SRR292678
+│   │   ├── contigs.fasta
+│   │   ├── scaffolds.fasta
+│   │   └── spades.log
+│   ├── SRR292678.zip
+│   ├── assembly_graph_with_scaffolds.gfa
+│   ├── scaffolds.fasta
+│   └── scaffolds.fasta.fai
+├── setup.sh
+└── tree.txt
+
+17 directories, 90 files
