@@ -56,3 +56,24 @@ BLAST results:
 > *Name (DEFINITION): **Escherichia coli 55989, complete sequence.***  
 > *Annotation Name: **GCF_000026245.1-RS_2025_06_09***  
 > *ACCESSION: **NC_011748***  
+
+# 7 
+Mauve was downloaded from the [source](https://darlinglab.org/mauve/download.html).  
+![shiga_genes](images/shiga_genes.png)  
+В исследуемом нами штамме E. coli X было выявлено 2 гена (а точнее 2 субъединицы), кодирующие шига-токсины:  
+1. stxA (4445290-4446249)  
+2. stxB (4446261-4446530)
+
+# 8 
+Да, у меня в файле много "hypothetical proteins", но основыяваясь на наличии, рядом расположенного, гена nohA_3 (Prophage DNA-packing protein NohA) можно предположить, что гены stxA и stxB были получены путем горизонтального переноса - лигозении (интеграции генома бактериофага в геном бактерии).  
+> nohA_3 (4448169-4448717)
+
+# 9 
+**E. coli X AR:**  
+![X_AR](images/x_ar.png)  
+
+**55989 AR:**  
+![55989_AR](images/55989_ar.png)  
+
+# 10
+![bla](images/bla.png)  
